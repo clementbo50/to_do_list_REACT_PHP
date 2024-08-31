@@ -1,0 +1,114 @@
+﻿.TaskCalendrier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-right: 2px solid #dadce0; /* Couleur de la bordure */
+    border-radius: 8px; /* Coins arrondis */
+  }
+  
+  .calendrier-input {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid transparent; /* Bordure transparente pour commencer */
+    border-radius: 8%;
+    transition: background-color 0.3s, border-color 0.3s; /* Animation de transition pour la couleur de fond et la bordure */
+  }
+  
+  .calendrier-input:hover {
+    background-color: rgba(0, 103, 255, 0.2); /* Légère transparence pour la couleur de fond au survol */
+    border-color: rgba(0, 103, 255, 0.5); /* Bordure légèrement plus foncée au survol */
+  }
+  
+  .calendrier-input:focus-within {
+    background-color: rgba(0, 103, 255, 0.2); /* Légère transparence pour la couleur de fond au focus */
+    border-color: rgba(0, 103, 255, 0.5); /* Bordure légèrement plus foncée au focus */
+  }
+  
+  
+  .calendrier-input select,
+  .calendrier-input input[type="number"] {
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px; /* Taille de la police */
+    outline: none; /* Supprime le contour par défaut */
+    transition: border-color 0.3s; /* Animation de transition pour une meilleure expérience utilisateur */
+  }
+  
+  .calendrier-input select {
+    width: 160px; /* Largeur ajustée pour le select */
+  }
+  
+  .calendrier-input input[type="number"] {
+    width: 120px; /* Largeur ajustée pour le input number */
+  }
+  
+  .calendrier-input select:focus,
+  .calendrier-input input[type="number"]:focus {
+    border-color: #66afe9; /* Couleur de bordure au focus */
+  }
+  
+  .calendrier-input select:hover,
+  .calendrier-input input[type="number"]:hover {
+    border-color: #99ccff; /* Couleur de bordure au survol */
+  }
+  
+  
+  .calendar {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .calendar th,
+  .calendar td {
+    padding: 12px; /* Augmentation de la taille du rembourrage */
+    border: 1px solid #f1f3f4; /* Couleur de la bordure */
+    text-align: center;
+    transition: background-color 0.3s; /* Animation de transition */
+  }
+  
+  .calendar th {
+    background-color: #57a5f3; /* Couleur de fond pour les en-têtes */
+    font-weight: bold;
+  }
+  
+  .calendar td {
+    background-color: #ffffff; /* Couleur de fond pour les cellules */
+  }
+  
+  .calendar .date-cell {
+    cursor: pointer;
+  }
+  
+  .calendar .empty-day {
+    background-color: #f9f9f9; /* Couleur de fond pour les jours vides */
+  }
+  
+  .calendar td:hover {
+    background-color: #83d3fc; /* Couleur de fond au survol */
+  }
+  .filter-container {
+    margin-top: 20px; /* Espacement par rapport aux éléments précédents */
+    text-align: center; /* Centrer le bouton horizontalement */
+}
+
+.filter-button {
+    padding: 10px 20px; /* Ajouter un espace autour du texte du bouton */
+    border-radius: 20px; /* Rendre les coins du bouton arrondis */
+    background-color: rgb(0, 103, 255); /* Couleur de fond bleue au survol */
+    color: white; /* Couleur du texte blanc */
+    border: none; /* Supprimer la bordure */
+    cursor: pointer; /* Curseur pointer au survol */
+}
+
+.empty-day.disabled {
+  pointer-events: none;
+  background-color: #f0f0f0; /* Couleur de fond grise */
+  /* Autres styles de votre choix */
+}

@@ -1,0 +1,144 @@
+﻿/* Style pour la checkbox */
+.task-checkbox {
+    display: none; /* Cacher la checkbox par défaut */
+  }
+  
+  /* Style pour le conteneur de la checkbox et du libellé */
+  .task-checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  /* Style pour la checkbox personnalisée */
+  .checkbox-custom {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px; /* Espacement entre la checkbox et le libellé */
+  }
+  
+  /* Style pour le libellé de la checkbox */
+  .checkbox-label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Style pour la checkbox lorsque cochée */
+  .task-checkbox:checked + .task-checkbox-label .checkbox-custom {
+    background-color: #007bff; /* Couleur de fond de la checkbox cochée */
+    border-color: #007bff; /* Couleur de la bordure de la checkbox cochée */
+  }
+  
+  /* Style pour le libellé de la checkbox lorsque cochée */
+  .task-checkbox:checked + .task-checkbox-label .checkbox-label {
+    color: #007bff; /* Couleur du libellé de la checkbox cochée */
+  }
+  
+  /* Style pour les tâches */
+  .task-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    overflow-y: scroll;
+  }
+  
+  .task-list {
+    width: 100%;
+    max-width: 800px;
+ 
+  }
+  
+  .task-item {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+ 
+  }
+  
+  .task-item.completed {
+    background-color: #d4edda;
+  }
+  
+  .task-checkbox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .task-checkbox-label {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+ 
+  }
+  
+  .checkbox-custom {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 5px;
+  }
+  
+  .checkbox-label {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .task-info {
+    text-align: center;
+
+  }
+  
+
+  .task-title,
+  .task-description {
+    margin-top: 5px;
+    color: #333;
+    word-break: break-word; /* Permet le saut de ligne en cas de mots longs */
+    max-height: 100px; /* Limite la hauteur pour éviter un contenu trop long */
+    overflow: hidden; /* Cache le contenu dépassant de la hauteur spécifiée */
+    font-family: Arial, sans-serif; /* Définit la police de caractères */
+  }
+  .delete-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ff3333; /* Couleur de fond rouge pour le bouton de suppression */
+    border: none; /* Suppression de la bordure */
+    border-radius: 60%; /* Bordure arrondie pour former un cercle */
+    width: 30px; /* Largeur du bouton */
+    height: 30px; /* Hauteur du bouton */
+    display: flex; /* Affichage en mode flex pour centrer le contenu */
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+    cursor: pointer; /* Curseur pointer pour indiquer l'interactivité */
+    transition: background-color 0.3s, transform 0.3s; /* Transition en douceur pour la couleur de fond et la transformation */
+  }
+  
+  .delete-button:hover {
+    transform: scale(1.1); /* Zoom du bouton lorsqu'il est survolé */
+  }
+  
+  .delete-icon {
+    color: white; /* Couleur de l'icône */
+    font-size: 20px; /* Taille de l'icône */
+  }
+
+.container-dateAuteur{
+  display: flex;
+  justify-content: space-between;
+}
+.task-list h3{
+  text-align: center;
+}

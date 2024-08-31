@@ -1,0 +1,30 @@
+﻿.container-TaskList {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  
+  .form-container {
+    flex: 1;
+    justify-content: center;
+    border-right: 2px solid #dadce0; /* Couleur de la bordure */
+    overflow-y: auto; /* Ajout d'un défilement si le contenu dépasse */
+
+  }
+  
+  .task-container {
+    flex: 3;
+    padding: 20px;
+    overflow-y: auto; /* Ajout d'un défilement si le contenu dépasse */
+  }
+  @media (max-width: 768px) {
+    /* Styles pour les écrans jusqu'à 768px de large */
+    .container-TaskList {
+      flex-direction: column;
+    }
+    .form-container, .task-container {
+      border-right: none;
+      padding: 20px;
+    }
+  }
+  

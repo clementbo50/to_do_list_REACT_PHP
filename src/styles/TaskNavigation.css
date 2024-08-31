@@ -1,0 +1,57 @@
+﻿.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(240, 251, 224);
+    padding: 20px;
+  }
+  
+  .nav-button {
+    width: 60px; /* Taille du bouton */
+    height: 60px; /* Taille du bouton */
+    background-color: rgb(0, 123, 255); /* Couleur de fond bleue */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 50%; /* Forme de cercle */
+    font-size: 24px; /* Taille de la police */
+    cursor: pointer; /* Curseur pointeur */
+    display: flex; /* Permet de centrer l'emoji */
+    justify-content: center; /* Permet de centrer l'emoji horizontalement */
+    align-items: center; /* Permet de centrer l'emoji verticalement */
+    margin-bottom: 10px; /* Marge entre les boutons */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Ombre portée */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animation de transition pour la couleur de fond et la transformation */
+  }
+  
+  .nav-button:hover {
+    background-color: rgb(0, 103, 255); /* Couleur de fond bleue au survol */
+    transform: scale(1.1); /* Effet de zoom au survol */
+  }
+  
+  .nav-button:active {
+    transform: scale(0.9); /* Effet de réduction lorsque le bouton est enfoncé */
+  }
+  
+  .nav-container label {
+    font-size: 14px; /* Taille de la police */
+    margin-bottom: 7px; /* Marge supérieure */
+    padding: 15px;
+    border-radius: 15%;
+    text-align: center;
+    
+  }
+  
+  .completed {
+    background-color: #fffdfd; /* Couleur de fond légèrement teintée */
+    box-shadow: 0px 0px 5px rgba(233, 237, 6, 0.3); /* Ombre portée */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 10px; /* Espacement intérieur */
+    margin-bottom: 10px; /* Marge inférieure */
+    transition: box-shadow 0.3s ease; /* Animation de transition */
+    border: 1px solid;
+  }
+  
+  .completed:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Ombre portée plus prononcée au survol */
+  }
+  
